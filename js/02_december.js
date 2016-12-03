@@ -174,9 +174,11 @@ function getBathCode() {
     function getButtons(arr) {
         var button;
         var numbersArray = [];
+        var result = [];
 
         var button2;
         var numbersArray2 = [];
+        var result2 = [];
 
         for (var i = 0; i < arr.length; i++) {
             if (Array.isArray(arr[i])) {
@@ -207,9 +209,12 @@ function getBathCode() {
             else {
                 return;
             }
-            console.log('button result ' + (i + 1) + ': ' + newButton);
-            console.log('button result TASK 2 ' + (i + 1) + ': ' + newButton2);
+
+            result.push(newButton);
+            result2.push(newButton2);
         }
+        console.log('button result TASK 1: ' + result);
+        console.log('button result TASK 2: ' + result2);
     }
     getButtons(arrayOfAllPaths);
 }
