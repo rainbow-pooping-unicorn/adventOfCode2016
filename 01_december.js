@@ -140,7 +140,7 @@ function direction(direction) {
         y *= -1;
     }
 
-    console.log('result 1.1:' + (x + y));
+    console.log('result 1.1: ' + (x + y));
 }
 
 direction(0);
